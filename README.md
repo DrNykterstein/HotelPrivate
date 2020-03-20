@@ -1,2 +1,2 @@
 # HotelPrivate
-Prototype (Sass) for Hotel 
+Prototype (Sass,JS) for Hotel 

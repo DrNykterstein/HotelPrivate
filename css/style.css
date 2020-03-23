@@ -197,3 +197,30 @@ h4{
     font-size: 5rem;
     color:#f53756;
 }
+/** Seccion cumple tus sueños */
+.cumple-sueños{
+    background-image: url(../img/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height:25rem;
+    margin-top: 4rem;/* bajamelo 50px*/
+    display:flex;
+    align-items: center;
+}
+
+.contenido-sueños{
+    flex:1;
+}
+.contenido-sueños h3,
+.contenido-sueños p{
+    color:white;
+    padding:0 1rem;
+}
+.contenido-sueños h3 span{
+    font-weight: 700;
+    color: #f53756;
+}
+.contenido-sueños p{
+    font-size: 1.8rem;
+}

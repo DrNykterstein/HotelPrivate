@@ -109,6 +109,7 @@ h4{
     color:white;
     font-size: 20px;
     margin-right: 20px;
+    border-radius: 1rem;
 }
 .navegacion a:last-of-type{
     margin:0;
@@ -188,6 +189,13 @@ h4{
     background-color: #e5e5e5;
     padding: 1.5rem 0;
     border-radius: 2rem;
+    transition: all .5s ease-in-out;
+}
+.iconos:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+    cursor: grabbing;
+    margin: 0 3rem;
 }
 .iconos h3{
     text-transform: uppercase;
@@ -223,4 +231,85 @@ h4{
 }
 .contenido-sueños p{
     font-size: 1.8rem;
+}
+/** Habitaciones **/
+.habitacionales h2{
+    text-align: center;
+    color: #f53756;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.habitaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-rows: repeat(3, auto);
+}
+.destacada{
+    grid-column: 1 / 3;/** Ve del 1 al 3 **/
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+}
+
+.quitar{
+    display: none;
+}
+@media screen and (min-width:768px){
+    .habitaciones{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .quitar{
+        display: block;
+    }
+}
+.titulo p{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+    display: grid;
+}
+.card p{
+    font-size: .9em;
+    line-height: 1.4em;
+}
+.precio span{
+    color: #f53756;
+}
+.anuncio{
+    display: grid;
+    padding-top: 1rem;
+}
+.anuncio .precio{
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+.anuncio img{
+    -webkit-filter:grayscale(1);
+}
+.destacada img{
+    margin: 0 auto;
+    width: 100%;
+}
+.boton{
+    height: 52px;
+    display: block;
+    background-color: #f53756;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #f53756;
+    transition: all .7s ease-in;
+}
+.boton:hover{
+    background-color: #fff;
+    color: #f53756;
+    border: 1px solid #f53756;
 }
